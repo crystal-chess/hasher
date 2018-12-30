@@ -11,8 +11,8 @@ declare(strict_types=1);
 
 namespace CrystalChess\Chess;
 
-use PHPUnit\Framework\TestCase;
 use CrystalChess\Hasher;
+use PHPUnit\Framework\TestCase;
 use UnexpectedValueException;
 
 /**
@@ -24,7 +24,7 @@ class HasherTest extends TestCase
     {
         $this->expectException(UnexpectedValueException::class);
         $options = [
-            'algo' => 'md5' // The old way of hashing. We do not use this anymore.
+            'algo' => 'md5', // The old way of hashing. We do not use this anymore.
         ];
         $hasher = new Hasher($options);
         // Should fail due to exception thrown.
