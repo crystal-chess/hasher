@@ -1,8 +1,11 @@
 <?php
+
 declare(strict_types=1);
 /**
  * Crystal Chess - Basic password hashing with PHP.
+ *
  * @author Crystal Chess Contributors <https://github.com/orgs/crystal-chess/people>
+ *
  * @link <https://github.com/crystal-chess/hasher> Crystal Hasher.
  */
 
@@ -13,17 +16,15 @@ use Illuminate\Hashing\ArgonHasher;
 use Illuminate\Hashing\BcryptHasher;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use UnexpectedValueException;
-
 use const PASSWORD_ARGON2_DEFAULT_MEMORY_COST;
-use const PASSWORD_ARGON2_DEFAULT_TIME_COST;
 use const PASSWORD_ARGON2_DEFAULT_THREADS;
+use const PASSWORD_ARGON2_DEFAULT_TIME_COST;
 
 /**
  * The hasher.
  */
 class Hasher implements HasherInterface
 {
-
     /** @var $options The hasher options. */
     private $options = [];
 
@@ -129,7 +130,7 @@ class Hasher implements HasherInterface
             'cost'        => 10,
             'memory_cost' => PASSWORD_ARGON2_DEFAULT_MEMORY_COST,
             'time_cost'   => PASSWORD_ARGON2_DEFAULT_TIME_COST,
-            'threads'     => PASSWORD_ARGON2_DEFAULT_THREADS
+            'threads'     => PASSWORD_ARGON2_DEFAULT_THREADS,
         ]);
     }
 }
