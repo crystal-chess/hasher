@@ -1,8 +1,11 @@
 <?php
+
 declare(strict_types=1);
 /**
  * Crystal Chess - Basic password hashing with PHP.
+ *
  * @author Crystal Chess Contributors <https://github.com/orgs/crystal-chess/people>
+ *
  * @link <https://github.com/crystal-chess/hasher> Crystal Hasher.
  */
 
@@ -13,7 +16,6 @@ namespace CrystalChess;
  */
 interface HasherInterface
 {
-
     /**
      * Create a new hasher instance.
      *
