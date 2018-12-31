@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 html, body {
     background-color: #9b59b6;
+    font-family: 'Ubuntu', sans-serif;
 }
 .jumbotron {
     background-color: #8e44ad;
