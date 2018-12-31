@@ -13,8 +13,8 @@ namespace CrystalChess\Chess;
 
 use CrystalChess\Hasher;
 use PHPUnit\Framework\TestCase;
-use UnexpectedValueException;
 use RuntimeException;
+use UnexpectedValueException;
 use const true;
 
 /**
@@ -45,7 +45,7 @@ class HasherTest extends TestCase
     {
         $options = [
             'algo' => 'bcrypt',
-            'cost' => 10
+            'cost' => 10,
         ];
         $hasher = new Hasher($options);
         $hash = $hasher->create('Hello World!');
@@ -62,7 +62,7 @@ class HasherTest extends TestCase
         }
         $options = [
             'algo' => 'bcrypt',
-            'cost' => 15
+            'cost' => 15,
         ];
         $hasherAlt = new Hasher($options);
         if ($hasherAlt->needsRehash($hash)) {
