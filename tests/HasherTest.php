@@ -36,6 +36,7 @@ class HasherTest extends TestCase
     {
         $options = [
             'algo' => 'bcrypt',
+        ];
         $hasher = new Hasher($options);
         // Should hit end of line in function.
     }
