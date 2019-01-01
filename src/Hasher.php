@@ -40,10 +40,23 @@ class Hasher implements HasherInterface
      */
     public function __construct(array $options = [])
     {
+        $this->setOptions($options);
+        $this->instance = $this->getHasherInstance();
+    }
+
+    /**
+     * Set the hasher options.
+     *
+     * @param array $options The hasher options.
+     *
+     * @return self Returns this class.
+     */
+    public function setOptions(array $options = []): self
+    {
         $resolver = new OptionsResolver();
         $this->configureOptions($resolver);
         $this->options = $resolver->resolve($options);
-        $this->instance = $this->getHasherInstance();
+        return $this;
     }
 
     /**
