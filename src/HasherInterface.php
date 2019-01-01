@@ -23,7 +23,7 @@ interface HasherInterface
      *
      * @return self Returns this class.
      */
-    public function setOptions(array $options = []): HasherInterface;
+    public function setOptions(array $options = []): self;
 
     /**
      * Create a new hasher instance.
