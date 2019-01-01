@@ -11,24 +11,23 @@ html, body {
 }
 .btn-info:hover {
     background-color: #2980b9;
-    border-color: #117a8b;
+    border-color: #2980b9;
 }
 .btn-primary:hover {
     background-color: #8e44ad;
-    border-color: #117a8b;
+    border-color: #8e44ad;
 }
 .btn-warning:hover {
     background-color: #e67e22;
-    border-color: #117a8b;
+    border-color: #e67e22;
 }
 .btn-danger:hover {
     background-color: #e74c3c;
-    border-color: #117a8b;
+    border-color: #e74c3c;
 }
 .btn-success:hover {
-    color: #fff;
     background-color: #27ae60;
-    border-color: #117a8b;
+    border-color: #27ae60;
 }
 .btn-warning {
     background-color: #e67e22;
