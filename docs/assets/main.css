@@ -29,6 +29,26 @@ html, body {
     background-color: #27ae60;
     border-color: #27ae60;
 }
+.btn-info:active {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+.btn-primary:active {
+    background-color: #8e44ad;
+    border-color: #8e44ad;
+}
+.btn-warning:active {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+.btn-danger:active {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+.btn-success:active {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
 .btn-warning {
     background-color: #e67e22;
     color: #2c3e50;
