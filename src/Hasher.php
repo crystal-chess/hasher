@@ -51,7 +51,7 @@ class Hasher implements HasherInterface
      *
      * @return self Returns this class.
      */
-    public function setOptions(array $options = []): self
+    public function setOptions(array $options = []): HasherInterface
     {
         $resolver = new OptionsResolver();
         $this->configureOptions($resolver);
