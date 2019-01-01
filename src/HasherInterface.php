@@ -17,6 +17,15 @@ namespace CrystalChess;
 interface HasherInterface
 {
     /**
+     * Set the hasher options.
+     *
+     * @param array $options The hasher options.
+     *
+     * @return self Returns this class.
+     */
+    public function setOptions(array $options = []): HasherInterface
+
+    /**
      * Create a new hasher instance.
      *
      * @param array $options The hasher options.
