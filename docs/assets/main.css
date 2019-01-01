@@ -9,12 +9,7 @@ html, body {
     color: #ecf0f1;
     border-radius: 0px;
 }
-.btn-da2rk:hover {
-    color: #2c3e50 !important;
-    text-decoration: none !important;
-}
-.btn-lig2ht:hover {
-    color: #ecf0f1 !important;
+.btn:hover {
     text-decoration: none !important;
 }
 .btn-warning {
