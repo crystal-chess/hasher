@@ -105,7 +105,7 @@ class Hasher implements HasherInterface
                 'threads'     => $this->options['threads'],
                 'verify'      => true,
             ]);
-            // @codeCoverageIgnoreEnd
+        // @codeCoverageIgnoreEnd
         } elseif ($this->options['algo'] == 'argon2id') {
             // @codeCoverageIgnoreStart
             return new Argon2IdHasher([
@@ -114,7 +114,7 @@ class Hasher implements HasherInterface
                 'threads'     => $this->options['threads'],
                 'verify'      => true,
             ]);
-            // @codeCoverageIgnoreEnd
+        // @codeCoverageIgnoreEnd
         } else {
             throw new UnexpectedValueException('Could not determine the hash algo.');
         }
