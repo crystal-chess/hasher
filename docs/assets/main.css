@@ -9,8 +9,26 @@ html, body {
     color: #ecf0f1;
     border-radius: 0px;
 }
-.btn:hover {
-    text-decoration: none !important;
+.btn-info:hover {
+    background-color: #2980b9;
+    border-color: #117a8b;
+}
+.btn-primary:hover {
+    background-color: #8e44ad;
+    border-color: #117a8b;
+}
+.btn-warning:hover {
+    background-color: #e67e22;
+    border-color: #117a8b;
+}
+.btn-danger:hover {
+    background-color: #e74c3c;
+    border-color: #117a8b;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #27ae60;
+    border-color: #117a8b;
 }
 .btn-warning {
     background-color: #e67e22;
