@@ -56,6 +56,7 @@ class Hasher implements HasherInterface
         $resolver = new OptionsResolver();
         $this->configureOptions($resolver);
         $this->options = $resolver->resolve($options);
+
         return $this;
     }
 
