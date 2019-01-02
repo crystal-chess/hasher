@@ -45,7 +45,7 @@ class Hasher implements HasherInterface
     {
         $this->setOptions($options);
         $this->instance = $this->getHasherInstance();
-        $this->rand     = new Rand();
+        $this->rand = new Rand();
     }
 
     /**
@@ -67,7 +67,7 @@ class Hasher implements HasherInterface
     /**
      * Generate a hash.
      *
-     * @param int   $length The hash length
+     * @param int   $length  The hash length
      * @param array $options New options if requested.
      *
      * @return string The hashed text.
@@ -78,6 +78,7 @@ class Hasher implements HasherInterface
         if (!empty($options)) {
             $this->setOptions($options);
         }
+
         return $this->instance->make($text);
     }
 
