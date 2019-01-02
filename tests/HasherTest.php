@@ -39,9 +39,10 @@ class HasherTest extends TestCase
         ];
         $hasher = new Hasher($options);
         // Should hit end of line in function.
+        $this->assertTrue(true);
     }
 
-    public function testHasherCreateVerifyAndNeedsRehashHashFunction()
+    public function testHasherCreateVerifyAndNeedsRehashAndGenerateHashFunction()
     {
         $options = [
             'algo' => 'bcrypt',
@@ -72,5 +73,8 @@ class HasherTest extends TestCase
         } else {
             throw new RuntimeException('Could not verify \'hasher::needsRehash\'.');
         }
+        $hash = $hasher->generate();
+        // Hash generated.
+        $this->assertTrue(true);
     }
 }
