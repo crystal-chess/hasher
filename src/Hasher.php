@@ -74,7 +74,7 @@ class Hasher implements HasherInterface
      */
     public function generate(int $length = 16, array $options = []): string
     {
-        $text = $this->rand->string($length);
+        $text = $this->rand->getString($length);
         if (!empty($options)) {
             $this->setOptions($options);
         }
