@@ -76,5 +76,8 @@ class HasherTest extends TestCase
         $hash = $hasher->generate();
         // Hash generated.
         $this->assertTrue(true);
+        $hash = $hasher->generate(16, $options);
+        // Hash generated.
+        $this->assertTrue(true);
     }
 }
