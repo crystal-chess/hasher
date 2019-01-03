@@ -45,7 +45,7 @@ class Hasher implements HasherInterface
     {
         $this->setOptions($options);
         $this->instance = $this->getHasherInstance();
-        $this->rand     = new Rand();
+        $this->rand = new Rand();
     }
 
     /**
