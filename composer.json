@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.2",
-        "crystal-chess/rand": "^0.0",
+        "crystal-chess/rand": "^0.1",
         "illuminate/hashing": "^5.7",
         "symfony/options-resolver": "^4.2"
     },
